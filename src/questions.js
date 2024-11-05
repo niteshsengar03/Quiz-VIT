@@ -19,7 +19,7 @@ export const questions = [
         { id: 2, question: "The mitochondrion is a/an:", options: ["Sub-cellular organelle", "Cell", "Tissue", "Organ"], answer: "Sub-cellular organelle" },
         { id: 3, question: "The hierarchical system was given by", options: ["Simon", "Watson", "Hutchinson", "Humboldt"], answer: "Simon" },
         { id: 4, question: "There is more biodiversity in areas with", options: ["less competition, less predation", "less competition, more predation", "more competition, more predation", "more competition, less predation"], answer: "more competition, more predation" },
-        { id: 5, question: "The definition of 'species' involves", options: ["cells", "species", "ecosystems", "biomes"], answer: "species" },
+        { id: 5, question: "groups of actually or potentially interbreeding natural populations, which are reproductively isolated from other such groups is a definition of", options: ["cells", "species", "ecosystems", "biomes"], answer: "species" },
         { id: 6, question: "The diversity within an ecosystem is known as", options: ["alpha (α) biodiversity", "beta (β) biodiversity", "gamma (γ) biodiversity", "delta (δ) biodiversity"], answer: "alpha (α) biodiversity" },
         { id: 7, question: "The diversity among different geographies is known as", options: ["alpha (α) biodiversity", "beta (β) biodiversity", "gamma (γ) biodiversity", "delta (δ) biodiversity"], answer: "gamma (γ) biodiversity" },
         { id: 8, question: "The emergent principle can be stated as", options: ["Whole = sum of parts", "Whole < sum of parts", "Whole > sum of parts", "None of these"], answer: "Whole > sum of parts" },
