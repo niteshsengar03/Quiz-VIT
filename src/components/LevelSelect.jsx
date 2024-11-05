@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Github } from 'lucide-react';
 
 const LevelSelect = () => {
     const navigate = useNavigate();
@@ -99,6 +100,19 @@ const LevelSelect = () => {
                     <span className="text-xl font-semibold text-white">S-Grade confirm (week 1 to 12)</span>
                 </button>
             </div>
+            <footer className="mt-8 text-center py-4 border-t border-gray-200">
+        <div className="flex items-center justify-center space-x-2">
+          <span className="text-sm text-gray-600">All the Best guys!</span>
+          <a
+            href="https://github.com//niteshsengar03/Quiz-VIT"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-gray-800 transition-colors duration-300"
+          >
+            <Github className="w-5 h-5" />
+          </a>
+        </div>
+      </footer>
         </div>
     );
 };
