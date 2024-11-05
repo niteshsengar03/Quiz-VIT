@@ -8,10 +8,7 @@ const App = () => {
         <Router>
             <div className="p-8">
                 <Routes>
-                    {/* Route for the level selection page */}
                     <Route path="/" element={<LevelSelect />} />
-                    
-                    {/* Dynamic route for each level's quiz page */}
                     <Route path="/quiz/:level" element={<QuizPage />} />
                 </Routes>
             </div>
