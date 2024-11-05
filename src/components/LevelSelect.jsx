@@ -15,7 +15,17 @@ const LevelSelect = () => {
     const handleSelect = (level) => {
         navigate(`/quiz/${level}`);
     };
+    const mid = ()=>{
+        navigate(`/quiz/midterm`);
+    };
 
+    const pre = ()=>{
+        navigate(`/quiz/preboard`);
+    }
+
+    const fin =()=>{
+        navigate(`/quiz/final`);
+    }
     // Function to update progress after completing a level
     const updateProgress = () => {
         if (progress < totalLevels) {
@@ -56,7 +66,7 @@ const LevelSelect = () => {
                 ))}
                 <button
                     className="col-span-2 sm:col-span-3 md:col-span-4 lg:col-span-5 p-6 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out flex flex-col items-center justify-center"
-                    onClick={() => handleSelect("cumulative")}
+                    onClick={() => {mid(),updateProgress();}}
                 >
                     <span className="text-3xl font-bold text-white mb-2">🏆</span>
                     <span className="text-xl font-semibold text-white">Mid Term (week 1 to 6)</span>
@@ -76,14 +86,14 @@ const LevelSelect = () => {
                 ))}
                 <button
                     className="col-span-2 sm:col-span-3 md:col-span-4 lg:col-span-5 p-6 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out flex flex-col items-center justify-center"
-                    onClick={() => handleSelect("cumulative")}
+                    onClick={() => pre()}
                 >
                     <span className="text-3xl font-bold text-white mb-2">🏆</span>
                     <span className="text-xl font-semibold text-white">Pre-Boards (week 6 to 12)</span>
                 </button>
                 <button
                     className="col-span-2 sm:col-span-3 md:col-span-4 lg:col-span-5 p-6 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out flex flex-col items-center justify-center"
-                    onClick={() => handleSelect("cumulative")}
+                    onClick={() => fin()}
                 >
                     <span className="text-3xl font-bold text-white mb-2">🏆</span>
                     <span className="text-xl font-semibold text-white">S-Grade confirm (week 1 to 12)</span>
