@@ -29,7 +29,7 @@ const LevelSelect = () => {
     useEffect(() => {
         if (progress === totalLevels) {
             setTimeout(() => {
-                alert("S grade confirmed, abe so Ja! 🎉");
+                alert("S grade confirmed, abe so Ja! ");
             }, 500);
         }
     }, [progress]);
